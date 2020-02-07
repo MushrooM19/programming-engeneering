@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="bcd906b0-02fc-4e90-ad19-47ab992d5766" name="1. Create new order" linkedPackageId="57c7081a-046d-4cb9-b683-6d68e1b226fb" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="80404067-6da1-4fd6-94fe-220609545c84">
+      <profileInstance Id="f412754c-1692-4d0a-9e58-0130b5419202" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0746f126-d105-4d2d-a2a8-77d201a1b6ec">
+      <profileInstance Id="222494f4-dd9b-401b-b0e1-fa33ed9f619e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="89c013c1-491a-491d-a534-00e06b7d5b8c" name="1. Create new order" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="372848c9-5672-4f0e-b3c1-48e478d1cd73" />
+        <fragments>
+          <behaviorExecutionSpecification Id="9d51cea5-85a1-4542-8c43-b2f6aac66eec" name="BehaviorExecutionSpecification2">
+            <elementDefinition Id="2cd5496b-6429-4694-a7c5-547418777b9a" />
+            <coveredLifelines>
+              <lifelineMoniker Id="6e3b12f7-cbf4-4b39-bf5a-9e1b2de958f5" LastKnownName="Order Options From" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="655f6359-1b52-4a6a-834c-8e735587e559" LastKnownName="ExecutionOccurrenceSpecification4" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="85aa6e9d-50ec-432c-b88e-ba68d99fc5f1" LastKnownName="ExecutionOccurrenceSpecification3" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="d0f567e7-4b4f-42dc-a729-6e4c470f7d16" LastKnownName="MessageOccurrenceSpecification6" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="85aa6e9d-50ec-432c-b88e-ba68d99fc5f1" name="ExecutionOccurrenceSpecification3">
+            <elementDefinition Id="f8c81ae1-1b60-48e3-9af6-04176297718d" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="10a3c122-68fc-4992-80bf-ab9b0d14df66" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="6e3b12f7-cbf4-4b39-bf5a-9e1b2de958f5" LastKnownName="Order Options From" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="c10213ba-c34a-4040-b899-7f00bd43ad6d" name="MessageOccurrenceSpecification5">
+            <elementDefinition Id="83cc9a10-7764-49e2-9a86-3c2dacb3a632" />
+            <covered>
+              <lifelineMoniker Id="b516ad05-7fec-49c7-baa7-51fa9f29d01f" LastKnownName="продавец : Продавец" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="d0f567e7-4b4f-42dc-a729-6e4c470f7d16" name="MessageOccurrenceSpecification6">
+            <elementDefinition Id="56ddf3d9-a894-40a3-8647-7ebb36e47f0c" />
+            <covered>
+              <lifelineMoniker Id="6e3b12f7-cbf4-4b39-bf5a-9e1b2de958f5" LastKnownName="Order Options From" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="655f6359-1b52-4a6a-834c-8e735587e559" name="ExecutionOccurrenceSpecification4">
+            <elementDefinition Id="1856f404-f541-411d-bfce-c44e5d459fd2" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="0b4dc818-5c09-415b-8fe4-08b8cc347add" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="6e3b12f7-cbf4-4b39-bf5a-9e1b2de958f5" LastKnownName="Order Options From" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="b516ad05-7fec-49c7-baa7-51fa9f29d01f" name="продавец : Продавец" isActor="true" lifelineDisplayName="продавец : Продавец">
+            <elementDefinition Id="c2167cd7-4a7e-4910-ba1b-7ac12d1200dc" />
+            <represents>
+              <propertyMoniker Id="55f21b2c-ca7e-4d17-84d4-b2de92155fda" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="c10213ba-c34a-4040-b899-7f00bd43ad6d" LastKnownName="MessageOccurrenceSpecification5" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="6e3b12f7-cbf4-4b39-bf5a-9e1b2de958f5" name="Order Options From" isActor="false" lifelineDisplayName="Order Options From">
+            <elementDefinition Id="92e05681-8633-4cc7-9f9c-81a4620d5c0d" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="85aa6e9d-50ec-432c-b88e-ba68d99fc5f1" LastKnownName="ExecutionOccurrenceSpecification3" />
+              <executionOccurrenceSpecificationMoniker Id="655f6359-1b52-4a6a-834c-8e735587e559" LastKnownName="ExecutionOccurrenceSpecification4" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="8b8f08ec-70db-4aaa-9701-b3e51e8d49a6" name="1. Create new order" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="b58609f8-c4b7-4eea-bbd1-d245e373c388" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="c10213ba-c34a-4040-b899-7f00bd43ad6d" LastKnownName="MessageOccurrenceSpecification5" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="d0f567e7-4b4f-42dc-a729-6e4c470f7d16" LastKnownName="MessageOccurrenceSpecification6" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property Id="55f21b2c-ca7e-4d17-84d4-b2de92155fda" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bdf29318-7033-48df-87e7-220c11be38d3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="88d7efaf-1dc9-4bbe-a9db-0f3ace0314f1" LastKnownName="Продавец" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="10a3c122-68fc-4992-80bf-ab9b0d14df66" name="ExecutionEvent">
+        <elementDefinition Id="cb890593-e62d-4abe-9b4a-de9305926f78" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="0b4dc818-5c09-415b-8fe4-08b8cc347add" name="ExecutionEvent">
+        <elementDefinition Id="fa450f63-baf2-4e03-b137-03318ff8ba54" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="88d7efaf-1dc9-4bbe-a9db-0f3ace0314f1" name="Продавец" isAbstract="false" isLeaf="false" cachedFullName="tattata::Продавец">
+        <elementDefinition Id="8c4514aa-6795-48f9-a521-d572152c0521" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="57c7081a-046d-4cb9-b683-6d68e1b226fb" name="tattata">
+    <elementDefinition Id="5767aab0-c862-4450-905b-165a6a617d0e" />
+  </package>
+</SequenceDesignerModel>

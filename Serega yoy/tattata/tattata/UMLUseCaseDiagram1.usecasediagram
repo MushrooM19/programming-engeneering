@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="5c2c7c7f-5133-4bf9-8272-eebb0cf9311f" name="UMLUseCaseDiagram1" linkedPackageId="3b9a0709-f806-44ed-ac75-1dc5d4053ebc" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="39759921-643a-4d79-b3f1-49586895bc04">
+      <profileInstance Id="2a8e539b-64fd-48ca-99e7-454f8d8aad8a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="660e9ad8-a850-46f1-8f60-f56f4903363b">
+      <profileInstance Id="24ab1ec4-911d-4f76-9075-11cff093015a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="2e6659b8-8e2f-41a8-b58c-c4c69c2c6c7e" name="Продавец" isAbstract="false" isLeaf="false">
+        <description>Продавец_ служащий, старающийся продать товар</description>
+        <elementDefinition Id="8c4514aa-6795-48f9-a521-d572152c0521" />
+        <targetEnds>
+          <association Id="2415b089-e1e7-4d85-a9c6-0c10d0cdab10" isDerived="false" sourceEndRoleName="Продавец" targetEndRoleName="Ввести новый заказ" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="43c53ca9-f543-4622-a0a5-07d47434ccc6" LastKnownName="Ввести новый заказ" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="72332db4-96d1-49b6-91a2-e68715128c73" name="Продавец" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ca603a07-29af-43b6-b99b-ea40762f4a8a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6dbb4680-4b03-4830-b425-42d720f78b58" name="Ввести новый заказ" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="008588bd-cd6d-43a1-b28c-6ed6a7143432" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3abdf451-2d5e-4a6f-b0fe-f00d5162a9f0" />
+          </association>
+          <association Id="b024403e-36b8-4823-8cff-393acf1acf83" isDerived="false" sourceEndRoleName="Продавец" targetEndRoleName="Изменить существующий заказ" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2a533f9c-856e-4b5e-92fe-e988a231fac2" LastKnownName="Изменить существующий заказ" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="15551a16-9208-486e-8e2e-468994fa58e9" name="Продавец" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c25ba843-9760-4973-897b-91c2d7301c8b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9cd07f96-0096-4d66-bc95-115e4df1aade" name="Изменить существующий заказ" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9d4b6403-849f-4a8d-b6dc-4ec754b76797" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4f421135-20f3-40c9-a235-ddd6c369c004" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="43c53ca9-f543-4622-a0a5-07d47434ccc6" name="Ввести новый заказ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8234ccf9-a250-4582-8442-d08e173b1776" />
+        <targetEnds>
+          <association Id="3bfc9bc0-58ae-402d-92c6-a1c831190523" isDerived="false" sourceEndRoleName="Ввести новый заказ" targetEndRoleName="Бухгалтерская система" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="abc45f86-7cb6-47d1-b1c6-6710eeed6669" LastKnownName="Бухгалтерская система" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d6728d8c-f3f4-444f-a4ab-265e2803d1dd" name="Ввести новый заказ" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0e2df936-15b2-4d78-a185-1db3e827432e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c487bd0a-2211-4817-bd80-1b12462607fa" name="Бухгалтерская система" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8f4044bc-6aa1-49e9-b500-e06406bc1df4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="39c833b0-f8a4-4566-862e-34ec4f5f32de" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2a533f9c-856e-4b5e-92fe-e988a231fac2" name="Изменить существующий заказ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1723fa94-70cb-4cc8-8c27-b9dbb4ddcf77" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="abc45f86-7cb6-47d1-b1c6-6710eeed6669" name="Бухгалтерская система" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8dc671f0-940f-4cb8-be90-7b027b889a40" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="39032af9-292a-4d1f-bc34-e3e900d7b400" name="Управляющий магазином" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="791a59e3-a4f0-4237-aca0-33faf9c00a45" />
+        <targetEnds>
+          <association Id="63baa505-fed3-49a9-82f7-5096ba55e173" isDerived="false" sourceEndRoleName="Управляющий магазином" targetEndRoleName="Напечатать инвентарную опись" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d7fa35d2-5328-4143-9733-ff24124cf594" LastKnownName="Напечатать инвентарную опись" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="60e0bd63-2c19-423c-86e8-824b03215466" name="Управляющий магазином" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ad21a0cd-a76a-4819-8580-87dcb66dc529" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a5b2ac80-826f-43f3-977b-a0aa759a4251" name="Напечатать инвентарную опись" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9cdd0d18-df90-4fb9-a8f9-d0cde1e0b629" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="22862e35-5bca-4908-9e7a-58871325d9d8" />
+          </association>
+          <association Id="66875482-6126-417b-9683-52c42322d77f" isDerived="false" sourceEndRoleName="Управляющий магазином" targetEndRoleName="Обновить инвентарную опись" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fb5a6a2b-c75f-4c15-b07a-f7519ac049fa" LastKnownName="Обновить инвентарную опись" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2eb9fb38-46a5-4897-a1eb-c81c4b62ecf1" name="Управляющий магазином" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b47f2ffd-1ef9-4b48-a58f-ca1bef9813c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ae7f58bc-cd38-4e91-b696-35002f04c962" name="Обновить инвентарную опись" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a593e2d2-9678-43d9-95d2-ef82bf81aeb6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3b96e4f3-3c24-4da8-a646-1e3f23b2a2be" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d7fa35d2-5328-4143-9733-ff24124cf594" name="Напечатать инвентарную опись" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7781cb25-bdc9-4a33-8110-13e0d15abb2d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fb5a6a2b-c75f-4c15-b07a-f7519ac049fa" name="Обновить инвентарную опись" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e5deb07c-de9a-42d2-b5ca-6c4032221531" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="9bb87779-8e55-4ba0-87c0-d8991e7be068" name="Клерк в магазине" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5da203ab-2777-4375-aa81-b2d29ebb923c" />
+        <targetEnds>
+          <association Id="112e8e22-be73-44db-92d3-611e9f12a0a4" isDerived="false" sourceEndRoleName="Клерк в магазине" targetEndRoleName="Оформить заказ" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7e354c18-d52e-488f-8d14-c73febb92d43" LastKnownName="Оформить заказ" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bde3f972-dd10-4ce4-a99d-e44d475e35f4" name="Клерк в магазине" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="267872c9-7fc5-41b8-891e-4ee85f832f2b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="79e93ec8-8ffb-4901-90a8-ebc4e6f3ad5d" name="Оформить заказ" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="20b1374b-e127-487e-a1ea-77e56bcaa552" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e6577450-1e43-4505-a94d-00513d4a175a" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7e354c18-d52e-488f-8d14-c73febb92d43" name="Оформить заказ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="42c16897-df8c-4c33-b6a8-3ea2f807a0a2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9103a2cd-a728-43e5-b1cc-037dc08bbd14" name="Отклонить заказ" isAbstract="true" isLeaf="false">
+        <elementDefinition Id="4b94d14f-a125-4f6c-a550-e8ddd3583583" />
+        <extendedCases>
+          <extend Id="8f887f0a-35fb-49a5-b28a-6d8f5df6ee46">
+            <useCaseMoniker Id="7e354c18-d52e-488f-8d14-c73febb92d43" LastKnownName="Оформить заказ" />
+            <elementDefinition Id="f9929bd7-e43b-4b65-a8ec-8dd9b3e92d63" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="8abb3698-64f4-490b-af10-83ca3bfd6b35" name="11.docx" isAbstract="false" isLeaf="false" fileName="tattata\11.docx">
+        <elementDefinition Id="37298005-6513-406b-87f1-ed1f994c22a5" />
+        <suppliersInternal>
+          <dependency Id="90e347ee-24ab-4619-903c-cbd42923f540">
+            <useCaseMoniker Id="43c53ca9-f543-4622-a0a5-07d47434ccc6" LastKnownName="Ввести новый заказ" />
+            <elementDefinition Id="eaa0b6b8-7c5d-4615-8351-5ffb894d4684" />
+          </dependency>
+        </suppliersInternal>
+      </artifact>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="3b9a0709-f806-44ed-ac75-1dc5d4053ebc" name="tattata">
+    <elementDefinition Id="5767aab0-c862-4450-905b-165a6a617d0e" />
+  </package>
+</useCaseModelRoot>

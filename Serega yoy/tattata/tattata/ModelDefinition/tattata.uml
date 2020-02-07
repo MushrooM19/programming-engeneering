@@ -1,0 +1,1886 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="5767aab0-c862-4450-905b-165a6a617d0e"
+  name="tattata" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="8c4514aa-6795-48f9-a521-d572152c0521"
+        name="Продавец"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Продавец_ служащий, старающийся продать товар</description>
+        <targetEnds>
+          <association
+            Id="3abdf451-2d5e-4a6f-b0fe-f00d5162a9f0"
+            isDerived="false"
+            sourceEndRoleName="Продавец"
+            targetEndRoleName="Ввести новый заказ"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8234ccf9-a250-4582-8442-d08e173b1776"
+              LastKnownName="Ввести новый заказ"
+              LastKnownLocation="tattata.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ca603a07-29af-43b6-b99b-ea40762f4a8a"
+                  name="Продавец"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="008588bd-cd6d-43a1-b28c-6ed6a7143432"
+                  name="Ввести новый заказ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4f421135-20f3-40c9-a235-ddd6c369c004"
+            isDerived="false"
+            sourceEndRoleName="Продавец"
+            targetEndRoleName="Изменить существующий заказ"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1723fa94-70cb-4cc8-8c27-b9dbb4ddcf77"
+              LastKnownName="Изменить существующий заказ"
+              LastKnownLocation="tattata.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c25ba843-9760-4973-897b-91c2d7301c8b"
+                  name="Продавец"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9d4b6403-849f-4a8d-b6dc-4ec754b76797"
+                  name="Изменить существующий заказ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8234ccf9-a250-4582-8442-d08e173b1776"
+        name="Ввести новый заказ"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="39c833b0-f8a4-4566-862e-34ec4f5f32de"
+            isDerived="false"
+            sourceEndRoleName="Ввести новый заказ"
+            targetEndRoleName="Бухгалтерская система"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="8dc671f0-940f-4cb8-be90-7b027b889a40"
+              LastKnownName="Бухгалтерская система"
+              LastKnownLocation="tattata.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0e2df936-15b2-4d78-a185-1db3e827432e"
+                  name="Ввести новый заказ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8f4044bc-6aa1-49e9-b500-e06406bc1df4"
+                  name="Бухгалтерская система"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1723fa94-70cb-4cc8-8c27-b9dbb4ddcf77"
+        name="Изменить существующий заказ"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="8dc671f0-940f-4cb8-be90-7b027b889a40"
+        name="Бухгалтерская система"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="791a59e3-a4f0-4237-aca0-33faf9c00a45"
+        name="Управляющий магазином"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="22862e35-5bca-4908-9e7a-58871325d9d8"
+            isDerived="false"
+            sourceEndRoleName="Управляющий магазином"
+            targetEndRoleName="Напечатать инвентарную опись"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7781cb25-bdc9-4a33-8110-13e0d15abb2d"
+              LastKnownName="Напечатать инвентарную опись"
+              LastKnownLocation="tattata.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ad21a0cd-a76a-4819-8580-87dcb66dc529"
+                  name="Управляющий магазином"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9cdd0d18-df90-4fb9-a8f9-d0cde1e0b629"
+                  name="Напечатать инвентарную опись"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3b96e4f3-3c24-4da8-a646-1e3f23b2a2be"
+            isDerived="false"
+            sourceEndRoleName="Управляющий магазином"
+            targetEndRoleName="Обновить инвентарную опись"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e5deb07c-de9a-42d2-b5ca-6c4032221531"
+              LastKnownName="Обновить инвентарную опись"
+              LastKnownLocation="tattata.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b47f2ffd-1ef9-4b48-a58f-ca1bef9813c5"
+                  name="Управляющий магазином"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a593e2d2-9678-43d9-95d2-ef82bf81aeb6"
+                  name="Обновить инвентарную опись"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7781cb25-bdc9-4a33-8110-13e0d15abb2d"
+        name="Напечатать инвентарную опись"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e5deb07c-de9a-42d2-b5ca-6c4032221531"
+        name="Обновить инвентарную опись"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="5da203ab-2777-4375-aa81-b2d29ebb923c"
+        name="Клерк в магазине"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e6577450-1e43-4505-a94d-00513d4a175a"
+            isDerived="false"
+            sourceEndRoleName="Клерк в магазине"
+            targetEndRoleName="Оформить заказ"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="42c16897-df8c-4c33-b6a8-3ea2f807a0a2"
+              LastKnownName="Оформить заказ"
+              LastKnownLocation="tattata.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="267872c9-7fc5-41b8-891e-4ee85f832f2b"
+                  name="Клерк в магазине"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="20b1374b-e127-487e-a1ea-77e56bcaa552"
+                  name="Оформить заказ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="42c16897-df8c-4c33-b6a8-3ea2f807a0a2"
+        name="Оформить заказ"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4b94d14f-a125-4f6c-a550-e8ddd3583583"
+        name="Отклонить заказ"
+        isAbstract="true"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f9929bd7-e43b-4b65-a8ec-8dd9b3e92d63">
+            <useCaseMoniker
+              Id="42c16897-df8c-4c33-b6a8-3ea2f807a0a2"
+              LastKnownName="Оформить заказ"
+              LastKnownLocation="tattata.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="37298005-6513-406b-87f1-ed1f994c22a5"
+        name="11.docx"
+        isAbstract="false"
+        isLeaf="false"
+        fileName="tattata\11.docx">
+        <suppliersInternal>
+          <dependency
+            Id="eaa0b6b8-7c5d-4615-8351-5ffb894d4684">
+            <useCaseMoniker
+              Id="8234ccf9-a250-4582-8442-d08e173b1776"
+              LastKnownName="Ввести новый заказ"
+              LastKnownLocation="tattata.uml" />
+          </dependency>
+        </suppliersInternal>
+      </artifact>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="c058704d-ed98-4058-b9cc-03e0c5ad9cd6"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="1dc90dcb-42fb-4a02-b241-423f9ffc4eab"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="780eafeb-2ce5-4063-b81d-4769148024d0"
+                LastKnownName="Order Options From"
+                LastKnownLocation="tattata.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="dbb2bf5e-28de-45d0-ace2-923367f48765"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="tattata.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="4752fc42-4008-43d1-ae6a-0252fa41b471"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="tattata.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="5be49e11-6809-4321-a8b2-4dc9b34467fb"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="tattata.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="4752fc42-4008-43d1-ae6a-0252fa41b471"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e34ee110-aa7a-4718-a1cb-26be06e308d5"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="780eafeb-2ce5-4063-b81d-4769148024d0"
+                LastKnownName="Order Options From"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8f69ce55-b4d7-4a04-af2d-ed76e336ed00"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="b94f2b32-1950-4f86-b071-35b52ffa6b1a"
+                LastKnownName="продавец : Продавец"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5be49e11-6809-4321-a8b2-4dc9b34467fb"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="780eafeb-2ce5-4063-b81d-4769148024d0"
+                LastKnownName="Order Options From"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="dbb2bf5e-28de-45d0-ace2-923367f48765"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0d012e3b-9e98-4dc1-a947-6a3fb47459a0"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="780eafeb-2ce5-4063-b81d-4769148024d0"
+                LastKnownName="Order Options From"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="80260008-9271-40be-8908-32a30003feca"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="68e630ad-f4a0-4588-85fa-48045b86dc6a"
+                LastKnownName="Order Details From"
+                LastKnownLocation="tattata.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="0bacc42b-1b81-4c2f-bea2-a0100e77998e"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="tattata.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="f19dde78-eaca-431b-8fc7-b7643758c3a9"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="tattata.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="06bae27e-0a43-487a-a946-96e6608d535c"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="tattata.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="f19dde78-eaca-431b-8fc7-b7643758c3a9"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6e7c50f2-2b72-4e2b-b461-78bcd407ca7f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="68e630ad-f4a0-4588-85fa-48045b86dc6a"
+                LastKnownName="Order Details From"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="06bae27e-0a43-487a-a946-96e6608d535c"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="68e630ad-f4a0-4588-85fa-48045b86dc6a"
+                LastKnownName="Order Details From"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="92c47445-ae3c-4231-9c1b-77f484d997c1"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="780eafeb-2ce5-4063-b81d-4769148024d0"
+                LastKnownName="Order Options From"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="0bacc42b-1b81-4c2f-bea2-a0100e77998e"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="de7389d5-ec65-421f-8e1c-b814eec79243"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="68e630ad-f4a0-4588-85fa-48045b86dc6a"
+                LastKnownName="Order Details From"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="dee6fa2f-cf65-4710-b332-365302e1a24b"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="68e630ad-f4a0-4588-85fa-48045b86dc6a"
+                LastKnownName="Order Details From"
+                LastKnownLocation="tattata.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e313f22a-2cde-4ed5-801b-a90fbe11ae3f"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="tattata.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="0a689e6c-5191-4d76-ba37-d4827c0565b3"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="tattata.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="04ffed0d-56fa-408e-93c3-ce3170c0542b"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="tattata.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="0a689e6c-5191-4d76-ba37-d4827c0565b3"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e9d9a4a9-93a9-41e4-9ce6-398a637f9725"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="68e630ad-f4a0-4588-85fa-48045b86dc6a"
+                LastKnownName="Order Details From"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c5659629-1753-42c7-bac6-ed25cb8838c4"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="b94f2b32-1950-4f86-b071-35b52ffa6b1a"
+                LastKnownName="продавец : Продавец"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="04ffed0d-56fa-408e-93c3-ce3170c0542b"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="68e630ad-f4a0-4588-85fa-48045b86dc6a"
+                LastKnownName="Order Details From"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e313f22a-2cde-4ed5-801b-a90fbe11ae3f"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f63d228b-a257-479c-b49a-1a962760549f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="68e630ad-f4a0-4588-85fa-48045b86dc6a"
+                LastKnownName="Order Details From"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="726cd761-cac0-4f25-9073-54e0a33a1eda"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="68e630ad-f4a0-4588-85fa-48045b86dc6a"
+                LastKnownName="Order Details From"
+                LastKnownLocation="tattata.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c6968b2c-5362-4ee3-bd5c-9a324ad403cc"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="tattata.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="33a465c5-4948-44a2-93d7-00ea6f5dbea6"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="tattata.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0d0120d6-4d3e-4493-b089-e16162897be2"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="tattata.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="33a465c5-4948-44a2-93d7-00ea6f5dbea6"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6ce8784a-a7cf-4adb-bf02-9cfc74835625"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="68e630ad-f4a0-4588-85fa-48045b86dc6a"
+                LastKnownName="Order Details From"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0d0120d6-4d3e-4493-b089-e16162897be2"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="68e630ad-f4a0-4588-85fa-48045b86dc6a"
+                LastKnownName="Order Details From"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="80873acf-d043-4184-94b3-6c9bcd10393e"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="b94f2b32-1950-4f86-b071-35b52ffa6b1a"
+                LastKnownName="продавец : Продавец"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c6968b2c-5362-4ee3-bd5c-9a324ad403cc"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="49a7f6e8-a7b9-4782-a4b2-8e383178b3cc"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="68e630ad-f4a0-4588-85fa-48045b86dc6a"
+                LastKnownName="Order Details From"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="4418c041-b635-4f90-9603-3eabf9181d59"
+            name="BehaviorExecutionSpecification9">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="7d15f95a-61c9-4332-be38-1e459810e3a2"
+                LastKnownName="Order Manager"
+                LastKnownLocation="tattata.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="40807c46-49b0-4cfd-acfe-e499641f6731"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="tattata.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="fbad286a-cc38-4e41-be46-63a132f917b2"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="tattata.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="37f03b8c-1a37-4e33-8691-ee1d5a1de58b"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="tattata.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="fbad286a-cc38-4e41-be46-63a132f917b2"
+            name="ExecutionOccurrenceSpecification17">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6ae973fa-ea79-4001-b090-de0a7c598a1f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="7d15f95a-61c9-4332-be38-1e459810e3a2"
+                LastKnownName="Order Manager"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="37f03b8c-1a37-4e33-8691-ee1d5a1de58b"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="7d15f95a-61c9-4332-be38-1e459810e3a2"
+                LastKnownName="Order Manager"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="30560dad-88f7-44f4-9f92-7f856b9b28ab"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="68e630ad-f4a0-4588-85fa-48045b86dc6a"
+                LastKnownName="Order Details From"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="40807c46-49b0-4cfd-acfe-e499641f6731"
+            name="ExecutionOccurrenceSpecification18">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7ecc8b12-7eb6-4e32-a6a2-833dd40dcf62"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="7d15f95a-61c9-4332-be38-1e459810e3a2"
+                LastKnownName="Order Manager"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="8a6343a7-88f8-4ae1-93e1-6e52d0166f1d"
+            name="BehaviorExecutionSpecification10">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="f06630a2-a38e-4e07-a1a3-8aaa373a385d"
+                LastKnownName="Order N1234"
+                LastKnownLocation="tattata.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="a5ad6e88-e61b-45a6-8bec-83687ed592d0"
+                LastKnownName="ExecutionOccurrenceSpecification20"
+                LastKnownLocation="tattata.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="0cde32eb-4dd4-4a66-8f94-c36439ca63a9"
+                LastKnownName="ExecutionOccurrenceSpecification19"
+                LastKnownLocation="tattata.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="87dc9a47-9d34-405a-832b-e3e35d299562"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="tattata.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="0cde32eb-4dd4-4a66-8f94-c36439ca63a9"
+            name="ExecutionOccurrenceSpecification19">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e46eb0c8-8392-456f-9135-7ea77c5ecd85"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f06630a2-a38e-4e07-a1a3-8aaa373a385d"
+                LastKnownName="Order N1234"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5c62b184-de4b-4e6a-b954-c56726f8f87d"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="7d15f95a-61c9-4332-be38-1e459810e3a2"
+                LastKnownName="Order Manager"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="87dc9a47-9d34-405a-832b-e3e35d299562"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="f06630a2-a38e-4e07-a1a3-8aaa373a385d"
+                LastKnownName="Order N1234"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="a5ad6e88-e61b-45a6-8bec-83687ed592d0"
+            name="ExecutionOccurrenceSpecification20">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f618b832-7dca-473b-8b92-725a0428b110"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f06630a2-a38e-4e07-a1a3-8aaa373a385d"
+                LastKnownName="Order N1234"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="5a4de646-293b-4ae5-bb48-5774708bcc17"
+            name="BehaviorExecutionSpecification11">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="f06630a2-a38e-4e07-a1a3-8aaa373a385d"
+                LastKnownName="Order N1234"
+                LastKnownLocation="tattata.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="1d44fcef-9cf4-43ff-869c-d013006da354"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="tattata.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="2d4b473d-5eb5-4b8a-af5a-509d68319b0d"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="tattata.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="73020e77-4509-407b-a3f4-88de797bf4c2"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="tattata.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="2d4b473d-5eb5-4b8a-af5a-509d68319b0d"
+            name="ExecutionOccurrenceSpecification21">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f21626d6-3e40-4569-ad92-360f3c751e50"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f06630a2-a38e-4e07-a1a3-8aaa373a385d"
+                LastKnownName="Order N1234"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9fbc1b17-bc0f-4d83-93fb-76bc5da27c5b"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="7d15f95a-61c9-4332-be38-1e459810e3a2"
+                LastKnownName="Order Manager"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="73020e77-4509-407b-a3f4-88de797bf4c2"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="f06630a2-a38e-4e07-a1a3-8aaa373a385d"
+                LastKnownName="Order N1234"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="1d44fcef-9cf4-43ff-869c-d013006da354"
+            name="ExecutionOccurrenceSpecification22">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="1ea28a2f-849f-4c45-bc51-0daaff804dbf"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f06630a2-a38e-4e07-a1a3-8aaa373a385d"
+                LastKnownName="Order N1234"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="079d00b9-3ff4-4d57-b153-c3220f150eb3"
+            name="BehaviorExecutionSpecification12">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="3ebc689d-9188-4f2d-a579-bc9f5a969dd2"
+                LastKnownName="Transaction Manager"
+                LastKnownLocation="tattata.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="1abcdc90-1a32-46c0-a05c-3d74c0d40318"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="tattata.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="59425862-cef5-4f0c-a034-c119a86ad8e7"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="tattata.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="49123403-3dd1-4f3c-9d5a-51ea63ef30b1"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="tattata.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="59425862-cef5-4f0c-a034-c119a86ad8e7"
+            name="ExecutionOccurrenceSpecification23">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="1ae534c6-0dc7-4999-9f8d-ab5fe6863345"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3ebc689d-9188-4f2d-a579-bc9f5a969dd2"
+                LastKnownName="Transaction Manager"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="49123403-3dd1-4f3c-9d5a-51ea63ef30b1"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="3ebc689d-9188-4f2d-a579-bc9f5a969dd2"
+                LastKnownName="Transaction Manager"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="205d8022-a329-4d2a-acde-c0cd19991bda"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="7d15f95a-61c9-4332-be38-1e459810e3a2"
+                LastKnownName="Order Manager"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="1abcdc90-1a32-46c0-a05c-3d74c0d40318"
+            name="ExecutionOccurrenceSpecification24">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e0fe5805-4eaf-4fc9-99bb-27f41df7a540"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3ebc689d-9188-4f2d-a579-bc9f5a969dd2"
+                LastKnownName="Transaction Manager"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e1e1cd00-8dc0-4bb3-91fb-5f23814c562c"
+            name="BehaviorExecutionSpecification13">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="f06630a2-a38e-4e07-a1a3-8aaa373a385d"
+                LastKnownName="Order N1234"
+                LastKnownLocation="tattata.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="d2f90597-6434-459c-b44b-39a857ba1bef"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="tattata.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="cdbe4132-9a5d-45a6-88d4-e930c8f2cb32"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="tattata.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="2069f660-313b-4fda-bacb-26754181d8b2"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="tattata.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="cdbe4132-9a5d-45a6-88d4-e930c8f2cb32"
+            name="ExecutionOccurrenceSpecification25">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e8dddc4c-33bd-4a13-bf20-4d26a1421188"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f06630a2-a38e-4e07-a1a3-8aaa373a385d"
+                LastKnownName="Order N1234"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cf7b9806-310e-4a31-a333-b0b4815dd0a0"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="3ebc689d-9188-4f2d-a579-bc9f5a969dd2"
+                LastKnownName="Transaction Manager"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2069f660-313b-4fda-bacb-26754181d8b2"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="f06630a2-a38e-4e07-a1a3-8aaa373a385d"
+                LastKnownName="Order N1234"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="d2f90597-6434-459c-b44b-39a857ba1bef"
+            name="ExecutionOccurrenceSpecification26">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="027dd7f7-7ac6-456a-9e76-e44239eb0485"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f06630a2-a38e-4e07-a1a3-8aaa373a385d"
+                LastKnownName="Order N1234"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9c099209-b691-47fe-9e66-3eeef5ea19bd"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="3ebc689d-9188-4f2d-a579-bc9f5a969dd2"
+                LastKnownName="Transaction Manager"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="c315557a-23d4-46a4-a9ab-0216f2316aa0"
+            name="BehaviorExecutionSpecification14">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="3ebc689d-9188-4f2d-a579-bc9f5a969dd2"
+                LastKnownName="Transaction Manager"
+                LastKnownLocation="tattata.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="d0f4cc61-f150-4582-97df-9b16ae90626a"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="tattata.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="00ec402c-c51d-4d5b-9adf-49a136e8c5d9"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="tattata.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="6352d45a-9a3b-4524-a759-c8df619fd46a"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="tattata.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="00ec402c-c51d-4d5b-9adf-49a136e8c5d9"
+            name="ExecutionOccurrenceSpecification27">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e8005f58-9e53-430e-a7c2-b956f4b22867"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3ebc689d-9188-4f2d-a579-bc9f5a969dd2"
+                LastKnownName="Transaction Manager"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6352d45a-9a3b-4524-a759-c8df619fd46a"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="3ebc689d-9188-4f2d-a579-bc9f5a969dd2"
+                LastKnownName="Transaction Manager"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="d0f4cc61-f150-4582-97df-9b16ae90626a"
+            name="ExecutionOccurrenceSpecification28">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="23ebc6bc-a75a-440c-ae37-d640e9dfa10d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="tattata.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="3ebc689d-9188-4f2d-a579-bc9f5a969dd2"
+                LastKnownName="Transaction Manager"
+                LastKnownLocation="tattata.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="b94f2b32-1950-4f86-b071-35b52ffa6b1a"
+            name="продавец : Продавец"
+            isActor="true"
+            lifelineDisplayName="продавец : Продавец">
+            <represents>
+              <propertyMoniker
+                Id="bf1ee7d0-2759-4ea3-8c7c-4c8ff13814af"
+                LastKnownLocation="tattata.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="8f69ce55-b4d7-4a04-af2d-ed76e336ed00"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="tattata.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c5659629-1753-42c7-bac6-ed25cb8838c4"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="tattata.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="80873acf-d043-4184-94b3-6c9bcd10393e"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="tattata.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="780eafeb-2ce5-4063-b81d-4769148024d0"
+            name="Order Options From"
+            isActor="false"
+            lifelineDisplayName="Order Options From">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="4752fc42-4008-43d1-ae6a-0252fa41b471"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="tattata.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="dbb2bf5e-28de-45d0-ace2-923367f48765"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="tattata.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="92c47445-ae3c-4231-9c1b-77f484d997c1"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="tattata.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="68e630ad-f4a0-4588-85fa-48045b86dc6a"
+            name="Order Details From"
+            isActor="false"
+            lifelineDisplayName="Order Details From">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="f19dde78-eaca-431b-8fc7-b7643758c3a9"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="tattata.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="0bacc42b-1b81-4c2f-bea2-a0100e77998e"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="tattata.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="0a689e6c-5191-4d76-ba37-d4827c0565b3"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="tattata.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e313f22a-2cde-4ed5-801b-a90fbe11ae3f"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="tattata.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="33a465c5-4948-44a2-93d7-00ea6f5dbea6"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="tattata.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c6968b2c-5362-4ee3-bd5c-9a324ad403cc"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="tattata.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="30560dad-88f7-44f4-9f92-7f856b9b28ab"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="tattata.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="7d15f95a-61c9-4332-be38-1e459810e3a2"
+            name="Order Manager"
+            isActor="false"
+            lifelineDisplayName="Order Manager">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="fbad286a-cc38-4e41-be46-63a132f917b2"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="tattata.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="40807c46-49b0-4cfd-acfe-e499641f6731"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="tattata.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5c62b184-de4b-4e6a-b954-c56726f8f87d"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="tattata.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9fbc1b17-bc0f-4d83-93fb-76bc5da27c5b"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="tattata.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="205d8022-a329-4d2a-acde-c0cd19991bda"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="tattata.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="f06630a2-a38e-4e07-a1a3-8aaa373a385d"
+            name="Order N1234"
+            isActor="false"
+            lifelineDisplayName="Order N1234">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="0cde32eb-4dd4-4a66-8f94-c36439ca63a9"
+                LastKnownName="ExecutionOccurrenceSpecification19"
+                LastKnownLocation="tattata.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a5ad6e88-e61b-45a6-8bec-83687ed592d0"
+                LastKnownName="ExecutionOccurrenceSpecification20"
+                LastKnownLocation="tattata.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2d4b473d-5eb5-4b8a-af5a-509d68319b0d"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="tattata.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1d44fcef-9cf4-43ff-869c-d013006da354"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="tattata.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="cdbe4132-9a5d-45a6-88d4-e930c8f2cb32"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="tattata.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="d2f90597-6434-459c-b44b-39a857ba1bef"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="tattata.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="3ebc689d-9188-4f2d-a579-bc9f5a969dd2"
+            name="Transaction Manager"
+            isActor="false"
+            lifelineDisplayName="Transaction Manager">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="59425862-cef5-4f0c-a034-c119a86ad8e7"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="tattata.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1abcdc90-1a32-46c0-a05c-3d74c0d40318"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="tattata.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="cf7b9806-310e-4a31-a333-b0b4815dd0a0"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="tattata.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9c099209-b691-47fe-9e66-3eeef5ea19bd"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="tattata.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="00ec402c-c51d-4d5b-9adf-49a136e8c5d9"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="tattata.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="d0f4cc61-f150-4582-97df-9b16ae90626a"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="tattata.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="8030e64a-e183-4cf9-8992-dfdf903d2bd4"
+            name="1. Create new order"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8f69ce55-b4d7-4a04-af2d-ed76e336ed00"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="tattata.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5be49e11-6809-4321-a8b2-4dc9b34467fb"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="tattata.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="2a80c911-11ad-4561-9cf2-a2ab90780cad"
+            name="2. Open form"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="92c47445-ae3c-4231-9c1b-77f484d997c1"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="tattata.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="06bae27e-0a43-487a-a946-96e6608d535c"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="tattata.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="a66252a1-4edd-416d-aab5-fc381d477861"
+            name="3. Enter order number, customer, order items"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c5659629-1753-42c7-bac6-ed25cb8838c4"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="tattata.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="04ffed0d-56fa-408e-93c3-ce3170c0542b"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="tattata.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9da9288d-5ee7-4f5c-a3be-75955ed9ebe2"
+            name="4. Save the order"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="80873acf-d043-4184-94b3-6c9bcd10393e"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="tattata.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0d0120d6-4d3e-4493-b089-e16162897be2"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="tattata.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f66d019d-0591-4c6b-907e-f3dcc86bee6b"
+            name="5. Save the order"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="30560dad-88f7-44f4-9f92-7f856b9b28ab"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="tattata.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="37f03b8c-1a37-4e33-8691-ee1d5a1de58b"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="tattata.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="186bb629-a010-4046-abfc-de7f532a1b96"
+            name="6. Create new blank order"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5c62b184-de4b-4e6a-b954-c56726f8f87d"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="tattata.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="87dc9a47-9d34-405a-832b-e3e35d299562"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="tattata.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e93e9c70-96eb-4ef3-8f2d-b6d8aa190f7a"
+            name="7. Set the order, customer, order items"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9fbc1b17-bc0f-4d83-93fb-76bc5da27c5b"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="tattata.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="73020e77-4509-407b-a3f4-88de797bf4c2"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="tattata.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="cfb3d589-baa3-411c-9b7c-1da447265fb8"
+            name="8. Save the oreder"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="205d8022-a329-4d2a-acde-c0cd19991bda"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="tattata.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="49123403-3dd1-4f3c-9d5a-51ea63ef30b1"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="tattata.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="33fb5d06-4420-4de5-9eac-4f6000581680"
+            name="9.Collect order information"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cf7b9806-310e-4a31-a333-b0b4815dd0a0"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="tattata.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2069f660-313b-4fda-bacb-26754181d8b2"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="tattata.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="d395b531-03fb-498c-8168-54c516418399"
+            name="10. Save the order information to the database"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9c099209-b691-47fe-9e66-3eeef5ea19bd"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="tattata.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6352d45a-9a3b-4524-a759-c8df619fd46a"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="tattata.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="bf1ee7d0-2759-4ea3-8c7c-4c8ff13814af"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="8c4514aa-6795-48f9-a521-d572152c0521"
+                LastKnownName="Продавец"
+                LastKnownLocation="tattata.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e34ee110-aa7a-4718-a1cb-26be06e308d5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0d012e3b-9e98-4dc1-a947-6a3fb47459a0"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6e7c50f2-2b72-4e2b-b461-78bcd407ca7f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="de7389d5-ec65-421f-8e1c-b814eec79243"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e9d9a4a9-93a9-41e4-9ce6-398a637f9725"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f63d228b-a257-479c-b49a-1a962760549f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6ce8784a-a7cf-4adb-bf02-9cfc74835625"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="49a7f6e8-a7b9-4782-a4b2-8e383178b3cc"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6ae973fa-ea79-4001-b090-de0a7c598a1f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7ecc8b12-7eb6-4e32-a6a2-833dd40dcf62"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e46eb0c8-8392-456f-9135-7ea77c5ecd85"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f618b832-7dca-473b-8b92-725a0428b110"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f21626d6-3e40-4569-ad92-360f3c751e50"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="1ea28a2f-849f-4c45-bc51-0daaff804dbf"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="1ae534c6-0dc7-4999-9f8d-ab5fe6863345"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e0fe5805-4eaf-4fc9-99bb-27f41df7a540"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e8dddc4c-33bd-4a13-bf20-4d26a1421188"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="027dd7f7-7ac6-456a-9e76-e44239eb0485"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e8005f58-9e53-430e-a7c2-b956f4b22867"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="23ebc6bc-a75a-440c-ae37-d640e9dfa10d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d3a35aef-8264-47b8-ac30-ad41ee2471e2"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bf8e6bf3-90d1-4d01-9c15-40b907230fbe"
+        name="OrderOptions"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="f56b8ec4-1d34-413a-9fe8-6753ea363272"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b1004f6a-863f-4b29-854b-62d59470720e"
+        name="OrderMgr"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="4ec1370e-250d-4e04-986f-a62166468460"
+            name="SaveOrder"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="842bf1b4-c31b-4731-a860-730562d07390"
+        name="OrderDetail"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="12b969d5-eb2e-4cd4-9b2c-a91ae5df1cf7"
+            name="Open"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2c051deb-21d7-401b-b923-4f87726deb5a"
+            name="SummitIinfo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2e39cc37-99e7-4264-b83f-d9628e2edec3"
+            name="Save"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="97d1ea98-4ccc-4031-8dd9-2b46656e2950"
+        name="Order"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="5093f20b-7366-4de4-a0c1-af3abf7af9b4"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="27fc0873-3f65-480c-b6eb-2071b47af498"
+            name="SetInfo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ee26b84b-0cc8-407e-84ff-2f49288ab158"
+            name="GetInfo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1b9131f6-9e00-4d38-accf-1b0bd2138b26"
+        name="TransactionMgr"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="93bf3197-b5ca-4cd8-a27a-ece145c2f092"
+            name="SaveOrder"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="54593e95-8c5d-4eb4-8a99-94d1d179835b"
+            name="Commit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a9faa216-4110-45ee-837a-082c794abd36"
+        LastKnownName="Boundaries"
+        LastKnownLocation="Package_1118.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="54602653-0017-46f8-813d-01e31413fca8"
+        LastKnownName="Control"
+        LastKnownLocation="Package1_1118.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e4661122-ffc2-4143-ae5a-0f05d76690ae"
+        LastKnownName="Entities"
+        LastKnownLocation="Package2_1118.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
